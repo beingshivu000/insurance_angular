@@ -1,0 +1,820 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/aboutus.css" rel="stylesheet">
+  <link href="assets/css/claim.css" rel="stylesheet">
+
+</head>
+
+<body class="about">
+  <header class="bg-primary py-8">
+    <div class="notice">
+      <h5>This website is currently under construction as we work on bringing you an enhanced online experience.</h5>
+    </div>
+    <div class="flex items-center flex-wrap gap-y-3 gap-x-2 justify-between">
+      <div class="header_menu sm:flex-1">
+        <button class="menu_toggle" type="button" data-drawer-target="nav_toggle" data-drawer-show="nav_toggle"
+          aria-controls="nav_toggle">
+          <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="6" rx="3" fill="white" />
+            <rect y="12" width="40" height="6" rx="3" fill="#009936" />
+            <rect y="24" width="40" height="6" rx="3" fill="white" />
+          </svg>
+          <span>MENU</span>
+        </button>
+      </div>
+      <div class="sm:flex-1 header_logo text-right sm:text-center">
+        <a href="index.html"><img src="assets/img/header_logo.svg" width="200" height="51" class="mx-auto"
+            alt="riskaide"></a>
+      </div>
+      <div class="sm:flex-1 header_actions text-right">
+        <a href="#!" class="btn-secondary button btn-style-1 ">
+          Get A Quote
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- offcanvas sidebar -->
+    <div id="nav_toggle"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1" aria-labelledby="drawer-label">
+      <button type="button" data-drawer-hide="nav_toggle" aria-controls="nav_toggle" class=" close_nav">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <ul class="navbar">
+        <li class="nav_item">
+          <a href="index.html" class=" nav_link active">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="about.html" class="nav_link">About Us</a>
+        </li>
+        <li class="nav_item">
+          <a href="services.html" class="nav_link">Services</a>
+        </li>
+        <li class="nav_item">
+          <a href="contact.html" class="nav_link">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- offcanvas sidebar -->
+  </header>
+
+  <section id="page_breadcrumb" class="page_breadcrumb bg-primary pt-[6rem] sm:pt-100 pb-70">
+    <div class="container">
+      <div class="flex justify-center">
+        <div class="basis-full  md:basis-7/12  text-center">
+          <h3 class="page-title text-h3 font-bold text-white mb-10 uppercase">CLAIM</h3>
+          <span class="seprator mb-10"></span>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ section start -->
+  <section class="faqs_section py-130">
+    <div class="container">
+      <div class="heading text-center">
+        <h2>Frequently Asked Questions <span class="text-secondary">(FAQs)</span></h2>
+      </div>
+
+
+      <div class="faqs_wrap grid lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <div class="faqs_left_panel flex flex-col">
+            <ul class="flex flex-wrap  flex-col text-left -mb-px text-sm font-medium text-center faqs_tab" id="myTab"
+              data-tabs-toggle="#myTabContent" role="tablist">
+              <li role="presentation">
+                <button class="block  text-h3 sss" id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
+                  aria-controls="profile" aria-selected="false">GENERAL FAQS <span><i
+                      class="fa-solid fa-question"></i></span>
+                  <div class="active_indicator">
+                    <label></label>
+                  </div>
+                </button>
+
+
+              </li>
+              <li role="presentation">
+                <button class="block  text-h3" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                  aria-controls="dashboard" aria-selected="false">SERVICE RELETED FAQS <span><i
+                      class="fa-solid fa-question"></i></span>
+                  <div class="active_indicator">
+                    <label></label>
+                  </div>
+                </button>
+              </li>
+              <li role="presentation">
+                <button class="block  text-h3" id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                  aria-controls="settings" aria-selected="false">INSURANCE RELETED FAQS <span><i
+                      class="fa-solid fa-question"></i></span>
+                  <div class="active_indicator">
+                    <label></label>
+                  </div>
+                </button>
+              </li>
+
+            </ul>
+
+            <div class="faq_image order-first lg:order-1">
+              <img src="assets/img/faq.png" alt="" width="" height="">
+            </div>
+            <div class="contact_us lg:order-1">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <a href="#" class="text-h3 font-bold text-white">CONTACT US</a>
+              <div class="ms-auto contact_arrow_icon">
+                <i class="fa-solid fa-angles-right"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="lg:col-span-7">
+          <div class="faqs_right_panel">
+            <div class="faqs_tabs_display">
+
+              <div id="myTabContent">
+                <div class=" " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="heading">
+                    <h2 class="text-h2  text-white mb-40">
+                      General <span class="text-secondary font-bold">FAQs</span>
+                    </h2>
+                  </div>
+                  <div class="faqs_accordion">
+                    <div id="accordion-color" data-accordion="collapse"
+                      data-active-classes="bg-blue-100 dark:text-white">
+                      <div>
+                        <h4 id="accordion-color-heading-1">
+                          <button type="button" class="flex items-center justify-between w-full  text-left"
+                            data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                            aria-controls="accordion-color-body-1">
+                            <span>How to file a claim online?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-1" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-1">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Filing an insurance claim online has become
+                              a convenient and efficient way to get the assistance you need after an
+                              unexpected event. Whether it's an auto accident, home damage, or a health-related issue,
+                              this step-by-step guide will
+                              walk you through the process of filing a claim online.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-2">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                            aria-controls="accordion-color-body-2">
+                            <span>Can I submit a claim via email?</span>
+                            <!-- <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg> -->
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-2" class="hidden accordion_body"
+                          aria-labelledby="accordion-color-heading-2">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and
+                              designed
+                              using the Figma
+                              software so everything you see in the library has a design equivalent in our Figma file.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a
+                                href="https://flowbite.com/figma/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based
+                              on
+                              the utility classes
+                              from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-3">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                            aria-controls="accordion-color-body-3">
+                            <span>How do I submit a claim online?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-3" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-3">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-4">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                            aria-controls="accordion-color-body-4">
+                            <span>How do I submit a claim online?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-4" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-4">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden  rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                  <div class="heading">
+                    <h2 class="text-h2  text-white mb-40">
+                      SERVICE RELETED <span class="text-secondary font-bold">FAQs</span>
+                    </h2>
+                  </div>
+                  <div class="faqs_accordion">
+                    <div id="accordion-color" data-accordion="collapse"
+                      data-active-classes="bg-blue-100 dark:text-white">
+                      <div>
+                        <h4 id="accordion-color-heading-6">
+                          <button type="button" class="flex items-center justify-between w-full  text-left"
+                            data-accordion-target="#accordion-color-body-6" aria-expanded="true"
+                            aria-controls="accordion-color-body-6">
+                            <span>How to file a claim online?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-6" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-6">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Filing an insurance claim online has become
+                              a convenient and efficient way to get the assistance you need after an
+                              unexpected event. Whether it's an auto accident, home damage, or a health-related issue,
+                              this step-by-step guide will
+                              walk you through the process of filing a claim online.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-7">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-7" aria-expanded="false"
+                            aria-controls="accordion-color-body-7">
+                            <span>Can I submit a claim via email?</span>
+                            </svg>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-7" class="hidden accordion_body"
+                          aria-labelledby="accordion-color-heading-7">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and
+                              designed
+                              using the Figma
+                              software so everything you see in the library has a design equivalent in our Figma file.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a
+                                href="https://flowbite.com/figma/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based
+                              on
+                              the utility classes
+                              from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-8">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-8" aria-expanded="false"
+                            aria-controls="accordion-color-body-8">
+                            <span>How do I submit a claim online?</span>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-8" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-8">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-9">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-9" aria-expanded="false"
+                            aria-controls="accordion-color-body-3">
+                            <span>What types of insurance do you offer?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-9" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-9">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-10">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-10" aria-expanded="false"
+                            aria-controls="accordion-color-body-10">
+                            <span>Can I submit a claim via email?</span>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-10" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-3">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hidden" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                  <div class="heading">
+                    <h2 class="text-h2  text-white mb-40">
+                      INSURANCE RELETED <span class="text-secondary font-bold">FAQs</span>
+                    </h2>
+                  </div>
+                  <div class="faqs_accordion">
+                    <div id="accordion-color" data-accordion="collapse"
+                      data-active-classes="bg-blue-100 dark:text-white">
+                      <div>
+                        <h4 id="accordion-color-heading-6">
+                          <button type="button" class="flex items-center justify-between w-full  text-left"
+                            data-accordion-target="#accordion-color-body-6" aria-expanded="true"
+                            aria-controls="accordion-color-body-6">
+                            <span>How to file a claim online?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-6" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-6">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Filing an insurance claim online has become
+                              a convenient and efficient way to get the assistance you need after an
+                              unexpected event. Whether it's an auto accident, home damage, or a health-related issue,
+                              this step-by-step guide will
+                              walk you through the process of filing a claim online.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-7">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-7" aria-expanded="false"
+                            aria-controls="accordion-color-body-7">
+                            <span>Can I submit a claim via email?</span>
+                            </svg>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-7" class="hidden accordion_body"
+                          aria-labelledby="accordion-color-heading-7">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and
+                              designed
+                              using the Figma
+                              software so everything you see in the library has a design equivalent in our Figma file.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a
+                                href="https://flowbite.com/figma/"
+                                class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based
+                              on
+                              the utility classes
+                              from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-8">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-8" aria-expanded="false"
+                            aria-controls="accordion-color-body-8">
+                            <span>How do I submit a claim online?</span>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-8" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-8">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-9">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-9" aria-expanded="false"
+                            aria-controls="accordion-color-body-3">
+                            <span>What types of insurance do you offer?</span>
+
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-9" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-9">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h4 id="accordion-color-heading-10">
+                          <button type="button" class="flex items-center justify-between w-full   text-left"
+                            data-accordion-target="#accordion-color-body-10" aria-expanded="false"
+                            aria-controls="accordion-color-body-10">
+                            <span>Can I submit a claim via email?</span>
+                            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                          </button>
+                        </h4>
+                        <div id="accordion-color-body-10" class="hidden  accordion_body"
+                          aria-labelledby="accordion-color-heading-3">
+                          <div class="accordion_body-content">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                              components
+                              from Flowbite are
+                              open source under the MIT license, whereas Tailwind UI is a paid product. Another
+                              difference
+                              is that Flowbite
+                              relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.
+                            </p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both
+                              Flowbite, Flowbite Pro,
+                              and even Tailwind UI as there is no technical reason stopping you from using the best of
+                              two
+                              worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                  Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow"
+                                  class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="hidden rounded-lg bg-gray-50 " id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
+                      class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>.
+                    Clicking another
+                    tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+                    the content
+                    visibility and styling.</p>
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <footer>
+    <section class="contact_section">
+      <div class="container">
+        <div class="contact_info w-full">
+          <div class="contact_info_con flex  flex-wrap md:flex-nowrap gap-8">
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Placeholder.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Our Location</h4>
+                  <p>55 Main Street, USA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Phone.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Contact US</h4>
+                  <p>+00 98 7 65 43 2 10</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Email.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Mail Us</h4>
+                  <p>info@riskaide.com</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_section bg-primary">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Our Company
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Our Story</a>
+              </li>
+              <li>
+                <a href="#!">News & Blog</a>
+              <li>
+                <a href="#!">Careers</a>
+              <li>
+                <a href="#!">Customer Support</a>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Our Services
+            </h4>
+            <ul class="text-white list-disc leading-loose font-normal">
+              <li>
+                <a href="#!">Life Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Health Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Travel Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Motor Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Home Insurance</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Navigations
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Faqs</a>
+              </li>
+              <li>
+                <a href="#!">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#!">Term & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="estimate">
+              <h3 class="text-h3 text-white font-extrabold">Get Free Estimate</h3>
+              <h2 class=" text-white font-extrabold">+ (231) 9876543</h2>
+              <a href="#!" class="text-white text-h4 go-to-contact">Contact Us <i
+                  class="fa-solid fa-angles-right"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sub_footer bg-primary py-8">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-10 ">
+          <div class="r-text w-full text-center sm:text-left order-last sm:order-first ">
+            <p class="text-white">© 2023 . All Rights Reserved</p>
+          </div>
+          <div class="r-logo w-full text-center order-none">
+            <a href="index.html"><img src="assets/img/footer-logo.svg" width="145" height="" alt="riskaide"
+                class="mx-auto" /></a>
+          </div>
+          <div
+            class="social_media w-full text-right flex gap-8 justify-center sm:justify-end sm:order-last order-first">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#!"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" type="text/javascript"></script>
+  <script src="assets/tailwind/tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/aboutus.css" rel="stylesheet">
+</head>
+
+<body class="about">
+  <header class="bg-primary py-8">
+    <div class="notice">
+      <h5>This website is currently under construction as we work on bringing you an enhanced online experience.</h5>
+    </div>
+    <div class="flex items-center flex-wrap gap-y-3 gap-x-2 justify-between">
+      <div class="header_menu sm:flex-1">
+        <button class="menu_toggle" type="button" data-drawer-target="nav_toggle" data-drawer-show="nav_toggle"
+          aria-controls="nav_toggle">
+          <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="6" rx="3" fill="white" />
+            <rect y="12" width="40" height="6" rx="3" fill="#009936" />
+            <rect y="24" width="40" height="6" rx="3" fill="white" />
+          </svg>
+          <span>MENU</span>
+        </button>
+      </div>
+      <div class="sm:flex-1 header_logo text-right sm:text-center">
+        <a href="index.html"><img src="assets/img/header_logo.svg" width="200" height="51" class="mx-auto"
+            alt="riskaide"></a>
+      </div>
+      <div class="sm:flex-1 header_actions text-right">
+        <a href="#!" class="btn-secondary button btn-style-1 ">
+          Get A Quote
+        </a>
+      </div>
+    </div>
+
+    <!-- offcanvas sidebar -->
+    <div id="nav_toggle"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1" aria-labelledby="drawer-label">
+      <button type="button" data-drawer-hide="nav_toggle" aria-controls="nav_toggle" class=" close_nav">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <ul class="navbar">
+        <li class="nav_item">
+          <a href="index.html" class=" nav_link active">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="about.html" class="nav_link">About Us</a>
+        </li>
+        <li class="nav_item">
+          <a href="services.html" class="nav_link">Services</a>
+        </li>
+        <li class="nav_item">
+          <a href="contact.html" class="nav_link">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- offcanvas sidebar -->
+  </header>
+
+  <main>
+    <section id="page_breadcrumb" class="page_breadcrumb bg-primary pt-[6rem] sm:pt-100 pb-70">
+      <div class="container">
+        <div class="flex justify-center">
+          <div class="basis-full  md:basis-7/12  text-center">
+            <h3 class="page-title text-h3 font-bold text-white mb-10 uppercase">ABOUT US</h3>
+            <span class="seprator mb-10"></span>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_author py-130">
+      <div class="container ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0  lg:gap-30">
+          <div class="">
+            <div class="heading text-left">
+              <h2><span class="text-secondary">Welcome to Riskaide</span>
+                <br />- Your Trusted Insurance Partner
+              </h2>
+            </div>
+          </div>
+          <div class="mb-40">
+            <p>At Riskaide, we understand that life is full of uncertainties. That's why we are here to provide you with
+              reliable insurance solutions to protect what matters most to you. Whether it's your home, your vehicle,
+              your business, or your loved ones, we have you covered.
+            </p>
+          </div>
+        </div>
+        <div class="autor_img overflow-hidden rounded-20 mb-40">
+          <img src="assets/img/about_author.jpg" width="" height="" alt="Riskaide" class="w-full ">
+        </div>
+        <p>At Riskaide, we take pride in being a well-established insurance provider with a dedicated and experienced
+          team at the helm. Our company is owned and led by Mike Hardson, a visionary and industry expert with a deep
+          understanding of the insurance landscape.
+        </p>
+        <p>Mike Hardson brings 27 years of experience in the insurance industry, demonstrating a strong commitment to
+          delivering exceptional service and comprehensive coverage to our valued clients. Their leadership and
+          strategic guidance have been instrumental in shaping Riskaide into a trusted and reputable insurance provider.
+        </p>
+        <div class="mt-30">
+          <a href="#!" class=" btn btn-secondary btn-style-2">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose section start -->
+    <section id="Why_choose" class="bg-tertiary pt-130">
+      <div class="heading text-center">
+        <h2 class="text-h2 font-extrabold">Why Choose Us</h2>
+        <p>When you choose Riskaide, you benefit from:</p>
+      </div>
+      <div class="container">
+        <div class="why_choose_con grid">
+          <div class="grid md:grid-cols-2 why-choose_grid">
+            <div class="flex Why_choose_box_con">
+              <div class="Why_choose_box Why_choose_box_odd text-right order-1 lg:order-none">
+                <h4 class="text-h4 font-bold">Expertise and Experience</h4>
+                <p>Our team of knowledgeable insurance professionals is committed to guiding you through the insurance
+                  process and helping
+                  you make informed decisions.</p>
+              </div>
+              <div class="icon__box icon__box_odd">
+                <div class="choose_icon">
+                  <img src="assets/img/Best customer experience.svg" alt=" riskaide">
+                </div>
+              </div>
+            </div>
+            <div class="flex Why_choose_box_con">
+              <div class="icon__box icon__box_odd">
+                <div class="choose_icon">
+                  <img src="assets/img/Manager.svg" alt="riskaideF">
+                </div>
+              </div>
+              <div class="Why_choose_box Why_choose_box_even text-left">
+                <h4 class="text-h4 font-bold">Personalized Service</h4>
+                <p>We understand that each client is unique, and we strive to provide personalized attention to your
+                  insurance needs.</p>
+              </div>
+
+            </div>
+            <div class="flex Why_choose_box_con">
+              <div class="Why_choose_box Why_choose_box_odd text-right order-1 lg:order-none">
+                <h4 class="text-h4 font-bold">Competitive Rates</h4>
+                <p>Our commitment to competitive rates ensures that you receive comprehensive coverage at affordable
+                  prices.</p>
+              </div>
+              <div class="icon__box icon__box_odd">
+                <div class="choose_icon">
+                  <img src="assets/img/Price list.svg" alt="riskaide">
+                </div>
+              </div>
+            </div>
+            <div class="flex Why_choose_box_con">
+              <div class="icon__box icon__box_odd">
+                <div class="choose_icon">
+                  <img src="assets/img/Technical Support.svg">
+                </div>
+              </div>
+              <div class="Why_choose_box Why_choose_box_even  text-left">
+                <h4 class="text-h4 font-bold">Claims Support</h4>
+                <p>In the event of a claim, our dedicated claims team is here to guide you through the process and
+                  provide prompt and fair
+                  settlement.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Counter section start... -->
+      <section id="counter_section" class="bg-primary py-100">
+        <div class="container container-fluid">
+          <div class="grid sm:grid-cols-4 grid-cols-2 gap-y-12 gap-x-5 xl:gap-3">
+            <div class="counter_box flex items-center flex-col xl:flex-row">
+              <div class="counter_icon">
+                <img src="assets/img/Health insurance.svg" alt=" riskaide">
+              </div>
+              <span class="counter_text text-center xl:text-left">
+                <h2 class="text-secondary text-h2 font-extrabold mb-0 counter">100</h2>
+                <h5 class="text-white mb-0">Gave insurances</h5>
+              </span>
+            </div>
+            <div class="counter_box flex items-center  flex-col xl:flex-row">
+              <div class="counter_icon">
+                <img src="assets/img/Link.svg" alt="riskaide">
+              </div>
+              <span class="counter_text text-center xl:text-left">
+                <h2 class="text-secondary text-h2 font-extrabold mb-0 counter">32</h2>
+                <h5 class="text-white mb-0">Professional Team</h5>
+              </span>
+            </div>
+            <div class="counter_box flex  items-center flex-col xl:flex-row">
+              <div class="counter_icon">
+                <img src="assets/img/Community.svg" alt="Riskaide">
+              </div>
+              <span class="counter_text text-center xl:text-left">
+                <h2 class="text-secondary text-h2 font-extrabold mb-0 counter">220</h2>
+                <h5 class="text-white mb-0">Satisfied Clients</h5>
+              </span>
+
+            </div>
+            <div class="counter_box flex items-center flex-col xl:flex-row">
+              <div class="counter_icon">
+                <img src="assets/img/Target.svg" alt="Riskaide">
+              </div>
+              <span class="counter_text text-center xl:text-left">
+                <h2 class="text-secondary text-h2 font-extrabold mb-0 counter">50</h2>
+                <h5 class="mb-0">Success Rate</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Counter section over... -->
+    </section>
+    <!-- why choose section over -->
+
+    <!-- Our team section start -->
+    <section id="our_team" class="sm:py-130 pb-0 pt-130">
+      <div class="heading text-center">
+        <h5>OUR SPEACIALIST</h5>
+        <h2>
+          Meet with our experet
+          <span class="text-secondary block">team member</span>
+        </h2>
+      </div>
+      <div class="lg:container">
+        <div class="grid sm:grid-cols-4  team_card_con">
+          <div class="team_card_box_con">
+            <div class="team_card_box">
+              <div class="team-card border border-1 border-black">
+                <img src="assets/img/team-img-1.png" alt=" riskaide" class="w-full block">
+                <div class="overlay text-center">
+                  <div class="overlay_text">
+                    <h4 class="text-h4 font-bold text-white">Jack Aranda</h4>
+                    <p class="text-[#D9D9D9]">Consultant</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a class="team_share_icon">
+              <i class="fa-solid fa-share-nodes"></i>
+            </a>
+          </div>
+          <div class="team_card_box_con">
+            <div class="team_card_box">
+              <div class="team-card border border-1 border-black">
+                <img src="assets/img/team-img-2.png" alt=" riskaide" class="w-full block">
+                <div class="overlay text-center">
+                  <div class="overlay_text">
+                    <h4 class="text-h4 font-bold text-white">Fran G. Pani</h4>
+                    <p class="text-[#D9D9D9]">Consultant</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a href="#" class="team_share_icon">
+              <i class="fa-solid fa-share-nodes"></i>
+            </a>
+          </div>
+          <div class="team_card_box_con">
+            <div class="team_card_box">
+              <div class="team-card border border-1 border-black">
+                <img src="assets/img/team-img-3.png" alt=" riskaide" class="w-full block">
+                <div class="overlay text-center">
+                  <div class="overlay_text">
+                    <h4 class="text-h4 font-bold text-white">Joe V. Awl</h4>
+                    <p class="text-[#D9D9D9]">Consultant</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a href="#" class="team_share_icon">
+              <i class="fa-solid fa-share-nodes"></i>
+            </a>
+          </div>
+          <div class="team_card_box_con">
+            <div class="team_card_box">
+              <div class="team-card border border-1 border-black">
+                <img src="assets/img/team-img-4.png" alt=" riskaide" class="w-full block">
+                <div class="overlay text-center">
+                  <div class="overlay_text">
+                    <h4 class="text-h4 font-bold text-white">Allie Grater</h4>
+                    <p class="text-[#D9D9D9]">Consultant</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="team_share_icon">
+                <i class="fa-solid fa-share-nodes"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Our team section over -->
+
+
+
+    <section id="" class="mt-130 ">
+      <section class="section-dark py-100" id="testimonial">
+        <div class="container">
+          <div class="heading  text-center">
+            <h5>Testimonial</h5>
+            <h2>What our <span class="text-secondary">clients</span> say</h2>
+            <p>Stay ahead of the curve with our latest news on coverage, claims, and industry developments:</p>
+          </div>
+          <div class="testimonial_slider">
+            <div>
+              <div class="single">
+                <div class="auth_img"> S </div>
+                <div class="testimonial_content">
+                  <h4 class="auth_name text-h4 font-bold">Sarah M</h4>
+                  <p>"I recently had the unfortunate experience of having to file a travel insurance claim due to a
+                    medical emergency during my vacation. I can't express enough how grateful I am to [Insurance Company
+                    Name] for their exceptional support throughout the process. From the moment I contacted them, their
+                    team was compassionate, efficient, and guided me every step of the way."</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="single">
+                <div class="auth_img"> M </div>
+                <div class="testimonial_content">
+                  <h4 class="auth_name text-h4 font-bold">Mark R</h4>
+                  <p>""As a small business owner, having the right insurance coverage is crucial to protect my assets
+                    and livelihood. I've been a client of [Insurance Company Name] for several years, and they have
+                    consistently exceeded my expectations. Their knowledgeable team took the time to understand my
+                    unique business needs and provided tailored coverage options at competitive rates.""</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="single">
+                <div class="auth_img"> S </div>
+                <div class="testimonial_content">
+                  <h4 class="auth_name text-h4 font-bold">Sarah M</h4>
+                  <p>"I recently had the unfortunate experience of having to file a travel insurance claim due to a
+                    medical emergency during my vacation. I can't express enough how grateful I am to [Insurance Company
+                    Name] for their exceptional support throughout the process. From the moment I contacted them, their
+                    team was compassionate, efficient, and guided me every step of the way."</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section id="acchivments-section" class="bg-tertiary py-100">
+        <div class="container">
+          <div class="grid lg:grid-cols-3 grid-cols-2   acchivments-con">
+            <div class="col-span-2 lg:col-auto">
+              <h2 class="text-h2 font-bold">Achievements</h2>
+              <p>At Riskaide, we are proud to celebrate our numerous achievements and milestones in the insurance
+                industry. Through our
+                commitment to excellence and a customer-centric approach, we have accomplished significant feats that
+                highlight our
+                dedication to providing exceptional service and reliable insurance solutions.</p>
+            </div>
+            <div class="col-span-2 popular_acchivemnt">
+              <h4 class="text-h4 font-bold lg:mb-[37px] text-black">Here are some of our notable achievements:</h4>
+              <div class="grid grid-cols-2 pop_acchive_box_con">
+                <div class="pop_acchive_box">
+                  <div class="pop_acchive_text">
+                    <h4 class="mb-2.5 text-h4 font-bold text-secondary">Customer Satisfaction:</h4>
+                    <p>Our unwavering focus on customer satisfaction has earned us a strong reputation for delivering
+                      exceptional service.</p>
+                  </div>
+                  <div class="pop_acchive_text pop_acchive_text_2">
+                    <h4 class="mb-2.5 text-h4 font-bold text-secondary">Industry Recognition:</h4>
+                    <p>We have been recognized by industry leaders and organizations for our outstanding contributions
+                      to the insurance sector.</p>
+                  </div>
+                </div>
+                <div class="pop_acchive_box">
+                  <div class="pop_acchive_text">
+                    <h4 class="mb-2.5 text-h4 font-bold text-secondary">Growth and Expansion:</h4>
+                    <p>We have experienced significant growth and expansion, both in terms of our client base and our
+                      range of insurance
+                      products.</p>
+                  </div>
+                  <div class="pop_acchive_text pop_acchive_text_2">
+                    <h4 class="mb-2.5 text-h4 font-bold text-secondary">Partnerships and Collaborations:</h4>
+                    <p>We have fostered strong partnerships and collaborations within the insurance industry. By working
+                      closely with reputable
+                      insurance carriers and industry professionals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="clients" class="py-130">
+      <div class="container">
+        <div class="heading  text-left ">
+          <h5>OUR CLIENTS</h5>
+          <h2>HERE ARE SOME OF <span class="text-secondary">OUR CLIENTS</span></h2>
+        </div>
+
+        <div class="client_slider">
+          <div>
+            <img src="assets/img/client_1.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_2.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_3.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_4.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_5.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_2.png" width="" height="" alt="riskaide">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact_section">
+      <div class="container">
+        <div class="contact_info w-full">
+          <div class="contact_info_con flex  flex-wrap md:flex-nowrap gap-8">
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Placeholder.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Our Location</h4>
+                  <p>55 Main Street, USA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Phone.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Contact US</h4>
+                  <p>+00 98 7 65 43 2 10</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Email.png" width="" height="" alt=" riskaide">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Mail Us</h4>
+                  <p>info@riskaide.com</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_section bg-primary">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Our Company
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Our Story</a>
+              </li>
+              <li>
+                <a href="#!">News & Blog</a>
+              <li>
+                <a href="#!">Careers</a>
+              <li>
+                <a href="#!">Customer Support</a>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Our Services
+            </h4>
+            <ul class="text-white list-disc leading-loose font-normal">
+              <li>
+                <a href="#!">Life Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Health Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Travel Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Motor Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Home Insurance</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Navigations
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Faqs</a>
+              </li>
+              <li>
+                <a href="#!">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#!">Term & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="estimate">
+              <h3 class="text-h3 text-white font-extrabold">Get Free Estimate</h3>
+              <h2 class=" text-white font-extrabold">+ (231) 9876543</h2>
+              <a href="#!" class="text-white text-h4 go-to-contact">Contact Us <i
+                  class="fa-solid fa-angles-right"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sub_footer bg-primary py-8">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-10 ">
+          <div class="r-text w-full text-center sm:text-left order-last sm:order-first ">
+            <p class="text-white">© 2023 . All Rights Reserved</p>
+          </div>
+          <div class="r-logo w-full text-center order-none">
+            <a href="index.html"><img src="assets/img/footer-logo.svg" width="145" height="" alt="riskaide"
+                class="mx-auto" /></a>
+          </div>
+          <div
+            class="social_media w-full text-right flex gap-8 justify-center sm:justify-end sm:order-last order-first">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#!"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" type="text/javascript"></script>
+  <script src="assets/tailwind/tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

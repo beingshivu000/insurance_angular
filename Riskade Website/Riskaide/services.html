@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link rel="stylesheet" href="assets/css/service.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="services">
+
+  <header class="bg-primary py-8">
+    <div class="notice">
+      <h5>This website is currently under construction as we work on bringing you an enhanced online experience.</h5>
+    </div>
+    <div class="flex items-center flex-wrap gap-y-3 gap-x-2 justify-between">
+      <div class="header_menu sm:flex-1">
+        <button class="menu_toggle" type="button" data-drawer-target="nav_toggle" data-drawer-show="nav_toggle"
+          aria-controls="nav_toggle">
+          <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="6" rx="3" fill="white" />
+            <rect y="12" width="40" height="6" rx="3" fill="#009936" />
+            <rect y="24" width="40" height="6" rx="3" fill="white" />
+          </svg>
+          <span>MENU</span>
+        </button>
+      </div>
+      <div class="sm:flex-1  header_logo text-right sm:text-center">
+        <a href="index.html"><img src="assets/img/header_logo.svg" width="200" height="51" class="mx-auto"
+            alt="riskaide"></a>
+      </div>
+      <div class="sm:flex-1 header_actions text-right">
+        <a href="#!" class="btn-secondary button btn-style-1 ">
+          Get A Quote
+        </a>
+      </div>
+    </div>
+
+    <!-- offcanvas sidebar -->
+    <div id="nav_toggle"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1" aria-labelledby="drawer-label">
+      <button type="button" data-drawer-hide="nav_toggle" aria-controls="nav_toggle" class=" close_nav">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <ul class="navbar">
+        <li class="nav_item">
+          <a href="index.html" class=" nav_link active">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="about.html" class="nav_link">About Us</a>
+        </li>
+        <li class="nav_item">
+          <a href="services.html" class="nav_link">Services</a>
+        </li>
+        <li class="nav_item">
+          <a href="contact.html" class="nav_link">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- offcanvas sidebar -->
+  </header>
+
+  <main>
+
+    <section id="page_breadcrumb" class="page_breadcrumb bg-primary pt-[6rem] sm:pt-100 pb-70">
+      <div class="container">
+        <div class="flex justify-center">
+          <div class="basis-full  md:basis-7/12  text-center">
+            <h3 class="page-title text-h3 font-bold text-white mb-10 uppercase">OUR SERVICES</h3>
+            <span class="seprator mb-10"></span>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24 pb-0 md:py-130" id="Comprehensive">
+      <div class="xl:container">
+        <div class="grid md:grid-cols-2 heading-con mb-[3rem]">
+          <div class="heading text-left">
+            <h2 class="text-center md:text-left mb-0">
+              <span class="text-secondary">Comprehensive</span>
+              <br>
+              Coverage Options:
+            </h2>
+          </div>
+          <div class="heading-text text-center md:text-left">
+            <p>We offer a wide range of insurance products designed to meet your unique needs. Whether it's protecting
+              your home,
+              vehicle, business, or your loved ones' financial future, we have you covered. Our coverage options
+              include:</p>
+          </div>
+        </div>
+      </div>
+      <section class="variation_insurance">
+        <div class="xl:container">
+          <div class="var_insurance_main_row flex flex-col gap-y-6 md:gap-y-[8rem]">
+            <div class="variation_insurance_subrow">
+              <div class="px-[1.5rem]">
+                <h3 class="text-center sm:text-left mb- font-extrabold text-h3">
+                  <span class="text-secondary">LIFE</span>
+                  INSURANCE
+                </h3>
+              </div>
+
+
+              <div class="flex flex-wrap var_insurance_item_con">
+
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/life.jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Group Life</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/life (2).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Individual Life</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="variation_insurance_subrow">
+              <div class="px-[1.5rem]">
+                <h3 class="text-center sm:text-left text-h3 font-extrabold">
+                  <span class="text-secondary">HEALTH</span>
+                  INSURANCE
+                </h3>
+              </div>
+
+
+              <div class="flex flex-wrap var_insurance_item_con">
+
+                <div class="var_insurance_item_box  basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/health.jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Individual</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/health (2).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Personal Accident</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/health (3).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Group Mediclaim</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12  md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/health (4).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Group Personal Accident</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+            <div class="variation_insurance_subrow">
+              <div class="px-[1.5rem]">
+                <h3 class="text-center sm:text-left mb- font-extrabold text-h3">
+                  <span class="text-secondary">TRAVEL</span>
+                  INSURANCE
+                </h3>
+              </div>
+
+
+              <div class="flex flex-wrap var_insurance_item_con">
+
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/travel.jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Travel Insurance</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/travel (2).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Loss of baggage</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="variation_insurance_subrow">
+              <div class="px-[1.5rem]">
+                <h3 class="text-center sm:text-left mb- font-extrabold text-h3">
+                  <span class="text-secondary">MOTOR</span>
+                  INSURANCE
+                </h3>
+              </div>
+
+
+              <div class="flex flex-wrap  var_insurance_item_con">
+
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/motor.jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Car Insurance</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/motor (2).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Two-Wheeler Insurance</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="variation_insurance_subrow">
+              <div class="px-[1.5rem]">
+                <h3 class="text-center sm:text-left text-h3 font-extrabold">
+                  <span class="text-secondary">GENRAL</span>
+                  INSURANCE
+                </h3>
+              </div>
+
+
+              <div class="flex flex-wrap var_insurance_item_con">
+
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/genral.jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Fire Insurance</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/genral (2).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Machinery breakdown</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/genral (3).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Product liability</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="var_insurance_item_box basis-full sm:basis-6/12 md:basis-2/6 lg:basis-1/4">
+                  <a href="#!" class="var_insurance_item">
+                    <img src="assets/img/genral (4).jpg" class="" alt="riskaide">
+                    <div class="var-insurance_caption">
+                      <h4 class="text-h4 font-bold text-white">Cargo Insurance</h4>
+                      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna
+                        aliqua.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+      </section>
+    </section>
+
+    <section id="clients" class="py-130">
+      <div class="container">
+        <div class="heading  text-left">
+          <h5>OUR CLIENTS</h5>
+          <h2>HERE ARE SOME OF <span class="text-secondary">OUR CLIENTS</span></h2>
+        </div>
+
+        <div class="client_slider">
+          <div>
+            <img src="assets/img/client_1.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_2.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_3.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_4.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_5.png" width="" height="" alt="riskaide">
+          </div>
+          <div>
+            <img src="assets/img/client_2.png" width="" height="" alt="riskaide">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact_section">
+      <div class="container">
+        <div class="contact_info w-full">
+          <div class="contact_info_con flex  flex-wrap md:flex-nowrap gap-8">
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Placeholder.png" width="" height="" alt="">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Our Location</h4>
+                  <p>55 Main Street, USA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Phone.png" width="" height="" alt="">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Contact US</h4>
+                  <p>+00 98 7 65 43 2 10</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basis-full  md:basis-1/3">
+              <div class="c_col flex items-center gap-8">
+                <div class="c_icon">
+                  <img src="assets/img/Email.png" width="" height="" alt="">
+                </div>
+                <div class="c_text">
+                  <h4 class="text-h4 text-white font-bold">Mail Us</h4>
+                  <p>info@riskaide.com</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer_section bg-primary">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white">
+              Our Company
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Our Story</a>
+              </li>
+              <li>
+                <a href="#!">News & Blog</a>
+              <li>
+                <a href="#!">Careers</a>
+              <li>
+                <a href="#!">Customer Support</a>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Our Services
+            </h4>
+            <ul class="text-white list-disc leading-loose font-normal">
+              <li>
+                <a href="#!">Life Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Health Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Travel Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Motor Insurance</a>
+              </li>
+              <li>
+                <a href="#!">Home Insurance</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="text-h4 font-medium uppercase text-white ">
+              Navigations
+            </h4>
+            <ul class="text-white list-disc  leading-loose font-normal">
+              <li>
+                <a href="#!">Faqs</a>
+              </li>
+              <li>
+                <a href="#!">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#!">Term & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="estimate">
+              <h3 class="text-h3 text-white font-extrabold">Get Free Estimate</h3>
+              <h2 class=" text-white font-extrabold">+ (231) 9876543</h2>
+              <a href="#!" class="text-white text-h4 go-to-contact">Contact Us <i
+                  class="fa-solid fa-angles-right"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sub_footer bg-primary py-8">
+      <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-10 ">
+          <div class="r-text w-full text-center sm:text-left order-last sm:order-first ">
+            <p class="text-white">© 2023 . All Rights Reserved</p>
+          </div>
+          <div class="r-logo w-full text-center order-none">
+            <a href="index.html"><img src="assets/img/footer-logo.svg" width="145" height="" alt="riskaide"
+                class="mx-auto" /></a>
+          </div>
+          <div
+            class="social_media w-full text-right flex gap-8 justify-center sm:justify-end sm:order-last order-first">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#!"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="assets/tailwind/tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/custom.js" type="text/javascript"></script>
+
+</body>
+
+</html>
